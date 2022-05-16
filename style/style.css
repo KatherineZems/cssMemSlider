@@ -71,13 +71,20 @@ body {
   display: inline-block;
   width: 70%;
   height: 70%;
-  background-color: transparent;
+  background-color: #5daaf0;
   border: 2px solid #5daaf0;
   border-radius: 50%;
+  transition: all 0.2s;
 }
 
 .slider__button:hover .slider__control {
-  background-color: #5daaf0;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.slider__control_active {
+  background-color: transparent;
+  border-color: #5daaf0;
 }
 
 @media (max-width: 830px) {
