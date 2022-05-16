@@ -98,6 +98,11 @@ body {
   border-color: #fff;
 }
 
+.slider__button:active .slider__control {
+  background-color: #c7c7c7;
+  border-color: #c7c7c7;
+}
+
 .slider__control_active {
   background-color: transparent;
   border-color: #5daaf0;
