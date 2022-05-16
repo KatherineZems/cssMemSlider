@@ -103,6 +103,11 @@ body {
   border-color: #5daaf0;
 }
 
+.slider__button:hover .slider__control_active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
 @media (max-width: 830px) {
   .slider {
     width: 90%;
