@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mem Slider</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
     <section class="slider">
       <div class="slider__images">
         <img
+          class="slider__image slider__image_active"
           src="images/think-about-it.jpg"
           alt="Mem"
           width="800"
           height="460"
         />
-        <img src="images/coughing-cat.jpg" alt="Mem" width="800" height="460" />
-        <img src="images/this-is-fine.jpg" alt="Mem" width="800" height="460" />
         <img
+          class="slider__image"
+          src="images/coughing-cat.jpg"
+          alt="Mem"
+          width="800"
+          height="460"
+        />
+        <img
+          class="slider__image"
+          src="images/this-is-fine.jpg"
+          alt="Mem"
+          width="800"
+          height="460"
+        />
+        <img
+          class="slider__image"
           src="images/walk-into-mordor.jpg"
           alt="Mem"
           width="800"
@@ -26,7 +41,9 @@
         />
       </div>
       <div class="slider__text">
-        <span class="slider__description">Think about it</span>
+        <span class="slider__description slider__description_active"
+          >Think about it</span
+        >
         <span class="slider__description">Coughing cat</span>
         <span class="slider__description">This is fine</span>
         <span class="slider__description"
@@ -35,7 +52,7 @@
       </div>
       <div class="slider__controls">
         <button class="slider__button">
-          <span class="slider__control"></span>
+          <span class="slider__control slider__control_active"></span>
         </button>
         <button class="slider__button">
           <span class="slider__control"></span>
