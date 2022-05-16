@@ -25,13 +25,29 @@ body {
 }
 
 .slider__images {
-  display: flex;
-  overflow: hidden;
   grid-area: img;
 }
 
-.slider__images img {
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appearance {
+  animation: appearance 0.7s ease-in-out;
+}
+
+.slider__image {
+  display: none;
   border-radius: 10px;
+}
+
+.slider__image_active {
+  display: inline-block;
 }
 
 .slider__text {
@@ -43,7 +59,7 @@ body {
   display: none;
 }
 
-.slider__description:nth-child(1) {
+.slider__description_active {
   display: inline-block;
 }
 
